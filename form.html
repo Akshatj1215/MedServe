@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* @media screen and (width: ){ */
+        
+    
+        #contform{
+            margin: auto;
+            height: 500;
+            width: 500px;
+            border: solid rgb(170, 191, 235)  ;
+            background-color:rgb(170, 191, 235) ;
+            
+        }
+        #form{
+            
+            background-color:rgb(254, 253, 253) ;
+            padding: 25px;
+            margin: 25px 10px 25px 10px;
+            border: none;
+        }
+        .input{
+           
+            border-radius: 6px; 
+            color:  rgb(59, 59, 118);
+            padding: 10px;
+            margin: 10px;
+            
+        }
+        #fn{
+            
+            float: left;
+            width: 170px;
+            background-color: rgb(227, 227, 243);
+            border-color: rgb(227, 227, 243);
+        }
+        #ln{
+            /* width: 165px; */
+            background-color: rgb(227, 227, 243);
+            border-color: rgb(227, 227, 243);
+        }  
+        #email{
+            float: left;
+            width: 170px;
+            background-color: rgb(210, 210, 251);
+            border-color:  rgb(217, 217, 247);
+        }
+        ::placeholder{
+            color:  rgb(59, 59, 118);
+        }
+        #ph{
+            background-color:  rgb(210, 210, 251);
+            border-color:  rgb(217, 217, 247);
+        }
+        #Address{
+            width: 380px;
+            background-color: rgb(177, 177, 244);
+            border-color:  rgb(187, 187, 241);
+        }
+        #message{
+            width: 380px;
+            background-color: rgb(135, 135, 227);
+            border-color:  rgb(131, 131, 198);
+        }
+        #submit{
+            width: 140px;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: rgb(66, 66, 241);
+            color: rgb(210, 201, 201);
+        }
+        #button{
+            display: flex;
+            justify-content: center;
+        }
+    /* } */
+
+    </style>
+</head>
+<body>
+    <div id="contform">
+        <form id="form" action="backend.php">
+            <h1 style="font-weight: 200; color:rgb(44, 44, 76) ;" >Get In Touch</h1>
+            <div>
+                <input type="text" class="input" id="fn" placeholder="First Name">
+            </div>
+            
+            <div>
+                <input type="text" class="input" id="ln" placeholder="Last Name">
+            </div>
+            
+            <div>
+                <input type="Email" class="input" id="email" placeholder="Email">
+            </div>
+            
+            <div>
+                <input type="tel" class="input" id="ph" placeholder="Phone">
+            </div>
+            
+            <div>
+                <input type="text" class="input" id="Address" placeholder="Address">
+            </div>
+                <textarea name="Message" class="input"  id="message" cols="30" rows="5" id="fn" placeholder="Type your message here"></textarea>
+            <div id="button">
+                <input type="submit" id="submit">
+            </div>
+            <p style="color: rgb(52, 225, 90);">Thanks for submitting!</p>
+        </form>
+
+    </div>
+</body>
+</html>
